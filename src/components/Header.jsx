@@ -1,17 +1,11 @@
 import './Header.css';
-import Link from "./Link.jsx";
 
 function Header({logo}) {
     return (
         <header className='App-header'>
-            <img src={logo} className='App-logo' alt='logo'
-            />
-            <p>Edit <code>src/App.js</code>
-                and save to reload. </p>
-            <Link
-                url='https://reactjs.org'
-                title='Learn React'
-            />
+            <a className='App-header-link' href={'/'}>
+                <img src={logo} className='App-logo' alt='logo'/>
+                <h1>My Portfolio</h1></a>
         </header>
     );
 }
